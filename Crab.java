@@ -10,13 +10,11 @@ public class Crab extends Actor
     // This method repeats the following actions
     public void act()
     {
-       move(3);
-       turnAtEdge();
-       checkKeyPress();
-       onCollision();
+        move(3);
+        turnAtEdge();
+        checkKeyPress();
+        onCollision();
     }
-    
-    // Moves the Crab
     
     // Turns the Crab at the edge
     private void turnAtEdge()
@@ -25,7 +23,6 @@ public class Crab extends Actor
         {
             turn(50);
         }
-    
     }
         
     // Checks for user key presses so user can turn the Crab
