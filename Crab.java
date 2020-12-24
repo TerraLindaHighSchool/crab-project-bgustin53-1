@@ -2,8 +2,8 @@ import greenfoot.*;
 
 /**
  * This class defines a crab. Crabs live on the beach.
- * @author: Bruce Gustin
- * @version: 12/20/2020
+ * @author Bruce Gustin
+ * @version 12/20/2020
  */
 public class Crab extends Actor
 {
@@ -47,6 +47,12 @@ public class Crab extends Actor
         {
             removeTouching(Worm.class);
             Greenfoot.playSound("slurp.wav");
+        }
+        
+        if(isTouching(Lobster.class))
+        {
+            Greenfoot.playSound("au.wav");
+            Greenfoot.stop();
         }
     
     }
